@@ -3,6 +3,7 @@ const  { Schema, model, models, default: mongoose } = require("mongoose");
 const CategorySchema=new Schema({
     name:{type:String,require:true},
     parent:{type:mongoose.Types.ObjectId,ref:'Category'},
+    properties:[{type:Object}]
 })
 
 

@@ -146,7 +146,8 @@ export default function ProductForm({
                 </label>
             </div>
             <label>Description</label>
-            <textarea
+            <textarea 
+                type="button"
                 placeholder="description"
                 value={description}
                 onChange={ev => setDesciption(ev.target.value)}
